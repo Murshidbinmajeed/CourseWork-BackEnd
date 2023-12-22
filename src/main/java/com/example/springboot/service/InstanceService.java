@@ -8,11 +8,13 @@ import com.example.springboot.entityVO.InstanceVO;
 
 public interface InstanceService {
 	
-	public Instance findInstanceBycourseId(long instanceId);
+	public List<Instance> findAllInstances();
+	
+	public List<InstanceVO> findInstanceBycourseIdYearAndSemester(long year,long semester,long courseId);
 	
 	public Instance createInstance(InstanceRequestVO instanceRequestVO);
 	
-	public void deleteInstance(long instanceId);
+	public void deleteInstance(long year,long semester,long courseId);
 	
-	public List<InstanceVO> findCoursesByYearAndSem(InstanceRequestVO instanceRequestVO);
+	public List<InstanceVO> findInstancesByYearAndSem(long year,long semester);
 }

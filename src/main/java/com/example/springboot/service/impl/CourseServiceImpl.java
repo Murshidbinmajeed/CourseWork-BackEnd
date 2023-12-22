@@ -3,11 +3,13 @@ package com.example.springboot.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.springboot.entity.Course;
 import com.example.springboot.repository.CourseRepository;
 import com.example.springboot.service.CourseService;
 
+@Service
 public class CourseServiceImpl implements CourseService {
 	
 	@Autowired

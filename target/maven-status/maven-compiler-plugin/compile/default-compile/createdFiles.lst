@@ -1,0 +1,12 @@
+com\example\springboot\entity\Instance.class
+com\example\springboot\repository\InstanceRepository.class
+com\example\springboot\service\impl\InstanceServiceImpl.class
+com\example\springboot\CourseWorkApplication.class
+com\example\springboot\entityVO\InstanceRequestVO.class
+com\example\springboot\service\CourseService.class
+com\example\springboot\entity\Course.class
+com\example\springboot\service\InstanceService.class
+com\example\springboot\service\impl\CourseServiceImpl.class
+com\example\springboot\controller\CourseController.class
+com\example\springboot\entityVO\InstanceVO.class
+com\example\springboot\repository\CourseRepository.class

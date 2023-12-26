@@ -86,7 +86,6 @@ public class InstanceServiceImpl implements InstanceService {
 
 	@Override
 	public List<Instance> findAllInstances() {
-		
 		return instanceRepository.findAll();
 	}
 

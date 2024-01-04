@@ -24,6 +24,7 @@ public class Instance {
 	
 	@ManyToOne
 	@JoinColumn(name = "course_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Course course;
 	
 	@Column(name = "year")

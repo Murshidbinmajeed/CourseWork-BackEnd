@@ -61,6 +61,11 @@ public class CourseController {
 		return new ResponseEntity<>(instanceService.findAllInstances(), HttpStatus.FOUND);
 	}
 	
+	@GetMapping("/getSemester")
+	public ResponseEntity<List<InstanceVO>> findAllSemesters(){
+		return new ResponseEntity<>(instanceService.findAllSemesters (), HttpStatus.FOUND);
+	}
+	
 	@GetMapping("/viewInstances/{year}/{semester}")
 	public ResponseEntity<List<InstanceVO>> findInstancesesByYearAndSem(@PathVariable long year,@PathVariable long semester){
 		return new ResponseEntity<>( instanceService.findInstancesByYearAndSem(year,semester), HttpStatus.FOUND);
@@ -72,8 +77,9 @@ public class CourseController {
 	}
 	
 	@DeleteMapping("/delInstances/{year}/{semester}/{courseId}")
-	public void deleteInstance(@PathVariable long year,@PathVariable long semester,@PathVariable long courseId) {
+	public ResponseEntity<?> deleteInstance(@PathVariable long year,@PathVariable long semester,@PathVariable long courseId) {
 		instanceService.deleteInstance(year,semester,courseId);
+		return new ResponseEntity<>("Deleted",HttpStatus.OK);
 	}
 
 }

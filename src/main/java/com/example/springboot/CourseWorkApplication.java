@@ -15,6 +15,6 @@ public class CourseWorkApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CourseWorkApplication.class, args);
-		System.out.println("Hello world!");
+//		System.out.println("Hello world!");
 	}
 }

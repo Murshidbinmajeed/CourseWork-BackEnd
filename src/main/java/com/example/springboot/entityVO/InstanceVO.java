@@ -16,6 +16,10 @@ public class InstanceVO {
 		this.courseCode = courseCode;
 	}
 
+	public InstanceVO(long semester) {
+		this.semester = semester;
+	}
+	
 	public InstanceVO() {
 		
 	}

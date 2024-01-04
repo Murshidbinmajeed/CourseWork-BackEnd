@@ -89,4 +89,17 @@ public class InstanceServiceImpl implements InstanceService {
 		return instanceRepository.findAll();
 	}
 
+	@Override
+	public List<InstanceVO> findAllSemesters() {
+		List<Instance> instanceList = instanceRepository.findAll();
+		List<InstanceVO> instanceVOList = new ArrayList<InstanceVO>();
+		for(Instance i:instanceList) {
+			InstanceVO instanceVO = new InstanceVO();
+			long sem1 = i.getSemester();
+			instanceVO.setSemester(sem1);
+			instanceVOList.add(instanceVO);
+		}
+		return instanceVOList;
+	}
+
 }

@@ -10,6 +10,8 @@ public interface InstanceService {
 	
 	public List<Instance> findAllInstances();
 	
+	public List<InstanceVO> findAllSemesters();
+	
 	public List<InstanceVO> findInstanceBycourseIdYearAndSemester(long year,long semester,long courseId);
 	
 	public Instance createInstance(InstanceRequestVO instanceRequestVO);

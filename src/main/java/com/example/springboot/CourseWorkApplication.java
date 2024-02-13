@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.springboot","com.example.springboot.controller","com.example.springboot.entity","com.example.springboot.entityVO","com.example.springboot.repository","com.example.springboot.service","com.example.springboot.service.impl"})
+@ComponentScan(basePackages = {"com.example.springboot","com.example.springboot.controller","com.example.springboot.entity","com.example.springboot.entityVO","com.example.springboot.repository","com.example.springboot.service","com.example.springboot.service.impl","com.example.springboot.config"})
 @EntityScan(basePackages = {"com.example.springboot.entity"})
 @EnableJpaRepositories(basePackages = {"com.example.springboot"})
 public class CourseWorkApplication {
@@ -15,6 +15,5 @@ public class CourseWorkApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CourseWorkApplication.class, args);
-//		System.out.println("Hello world!");
 	}
 }
